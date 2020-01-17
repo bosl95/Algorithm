@@ -26,3 +26,4 @@ print(sum(arr)//n)
 print() # 중앙값
 print() # 최빈값
 print(max(arr)-min(arr))    # 범위
+
