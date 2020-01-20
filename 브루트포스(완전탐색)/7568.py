@@ -12,3 +12,18 @@ for i in arr:
             r += 1
     print(r, end=" ")
 # 또 여기 뒤부분을 못만ㄷ ㅡㅁ... 머리 안굴러ㄴ간다 진자루..
+
+
+'''     내가 푼 알고리즘       '''
+import sys
+arr = []
+n = int(sys.stdin.readline())
+for _ in range(n):
+    arr.append(list(map(int, sys.stdin.readline().split())))
+rank = [1] * n
+for i in range(n):
+    for j in range(n):
+        if arr[i][1] > arr[j][1] and arr[i][0] > arr[j][0]:
+            rank[j] += 1
+print(*rank)
+
