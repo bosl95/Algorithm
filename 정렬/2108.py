@@ -21,9 +21,23 @@ n = int(sys.stdin.readline())
 arr = []
 for _ in range(n):
     arr.append(int(sys.stdin.readline()))
+def f(arr):
+    from collections import Counter
+    if len(arr) == 1 : return arr[0]
+    c = Counter(arr).most_common()
+    if len(c) > 1:
+        tmp = [x[0] for x in c if c[0][1]==x[1]]
+        tmp.sort()
+        return (tmp[0] if len(tmp)==1 else tmp[1])
+    else:
+        return c[0][0]
 
-print(sum(arr)//n)
-print() # 중앙값
-print() # 최빈값
-print(max(arr)-min(arr))    # 범위
+print(round(sum(arr)/n))
+sorted_arr = sorted(arr)
+print(sorted_arr[n//2])
+print(f(arr))
+print(max(arr)-min(arr))
 
+
+# freq = {x:arr.count(x) for x in set(arr)}
+''' [최빈값]count를 써서 구할려고 하니 O(n^2)이 되어버려 시간초과가 뜸 '''
