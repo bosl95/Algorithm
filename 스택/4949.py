@@ -13,3 +13,5 @@ def check(s_l):
     else: return "yes"
 for s in stack:
     print(check(s))
+
+# 시간 단축 시키고 시파!
