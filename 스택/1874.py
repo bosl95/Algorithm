@@ -12,3 +12,4 @@ if n_s: print("NO")
 else:
     for s in check_s:
         print(s)
+# 너무 쫄았짜나!!!!
