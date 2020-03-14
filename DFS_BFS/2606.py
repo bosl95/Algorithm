@@ -11,20 +11,35 @@ def virus(v):
     #         ch.append(i)
     #         virus(i)
     # return len(ch)-1
-    # DFS --> 틀렸다고 나오는데 모르겠다.
+    ''' DFS --> 틀렸다고 나오는데 모르겠다.'''
 
-    '''     BFS로 2차 시도      '''
-    visited = []
-    queue = [v]
+    '''     BFS로 2차 시도 (성공)     '''
+    # visited = []
+    # queue = [v]
+    #
+    # while queue:
+    #     n = queue.pop(0)
+    #     if n not in visited:
+    #         visited.append(n)
+    #     for i, v in enumerate(a[n]):
+    #         if i not in visited and v==1:
+    #             queue.append(i)
+    # return len(visited)-1
 
-    while queue:
-        n = queue.pop(0)
-        if n not in visited:
-            visited.append(n)
-        for i, v in enumerate(a[n]):
-            if i not in visited and v==1:
-                queue.append(i)
-    return len(visited)-1
+    '''     DFS 2차 시도(성공) --> BFS보다 20ms 빠르다!
+    '''
+    visit = []
+    stack = [v]
+
+    while stack:
+        node = stack.pop()
+        if node not in visit:
+            visit.append(node)
+        for i, value in enumerate(a[node]):
+            if value==1 and i not in visit:
+                stack.append(i)
+
+    return len(visit)-1
 print(virus(1))
 '''
 맞췄다.
