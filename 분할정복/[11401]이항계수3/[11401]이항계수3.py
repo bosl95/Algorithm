@@ -11,6 +11,5 @@ n, r = map(int, input().split())
 print(b_fact(n, r))
 
 '''
-페르마의 소정리
-p가 소수이고 a가 p의 배수가 아니면 a^(p-1) = 1 (mod p)
+
 '''
