@@ -57,3 +57,5 @@
 	  if ans < th*w: ans = th*w  
 	    s.append(i)  
 	print(ans)
+	
+>3 3 4 3 (..?)
