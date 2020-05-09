@@ -28,7 +28,7 @@ visit = [ [0]*m for _ in range(n) ]
 queue = [[0, 0]]; visit[0][0] = 1
 while queue:
     x, y = queue.pop(0)
-    visit.append([x, y])
+   #  visit.append([x, y])
 
     for mx, my in [1, 0], [-1, 0], [0, 1], [0, -1]:
         xx, yy = x + mx, y + my
