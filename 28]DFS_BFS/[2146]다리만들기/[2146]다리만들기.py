@@ -7,7 +7,7 @@ dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
 
-def bfs(start, cnt):
+def bfs(start, cnt, arr, visit):
     visit[start[0]][start[1]] = cnt
     q = deque([start])
     tmp = deque()
@@ -27,7 +27,7 @@ def bfs(start, cnt):
     return tmp
 
 
-def bfs2(stack, cnt):
+def bfs2(stack, cnt, arr, visit):
     visit2 = [[0] * n for _ in range(n)]
 
     while stack:
@@ -46,30 +46,22 @@ def bfs2(stack, cnt):
 def solution(m, world):
     i_cnt = 1
     start = []
+    visit = [[0] * n for _ in range(n)]
 
     for i in range(m):
         for j in range(m):
             if world[i][j] == 1 and visit[i][j] == 0:
-                start.append(bfs((i, j), i_cnt))
+                start.append(bfs((i, j), i_cnt, world, visit))
                 i_cnt += 1
 
-
-    res = bfs2(start[0], 1)
+    res = bfs2(start[0], 1, world, visit)
     for i in range(1, i_cnt - 1):
-       res = min(res, bfs2(start[i], i + 1))
+        res = min(res, bfs2(start[i], i + 1, world, visit))
 
     return res
 
+
 n = int(input())
 arr = [list(map(int, input().split())) for _ in range(n)]
-visit = [[0] * n for _ in range(n)]
-print(solution(n, arr))
 
-'''
-섬을 모두 찾아준다. (몇개 인가)
-섬을 찾으면서 바로 거리를 잰다.
-섬의 경계를 넘어가는 부분부터 visit의 카운트를 해주면서 거리를구한다.
-거리를 계속 구해나가다가 다른 섬의 경계를 발견하면 res에 삽입
-(이때 bfs 탐색을 이용하기 때문에 가장 짧은 거리의 섬을 찾을 수 있따.)
-섬마다 각 거리에 있는 애들을 방문해준다.
-'''
+print(solution(n, arr))
