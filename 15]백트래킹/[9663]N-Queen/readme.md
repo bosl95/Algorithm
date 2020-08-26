@@ -11,7 +11,9 @@
 
 > Backtracking 알고리즘을 이용한 풀이.
 1) 열 / 대각선들의 규칙을 체크해주는 방법.
+
 ![image](https://user-images.githubusercontent.com/34594339/89256474-263d2500-d65f-11ea-8934-194fd8fb360c.png)
+
 2) backtracking
 
 		if left[k+l] + right[n+k-l-1] + col[l] == 0:  
