@@ -28,7 +28,7 @@
 **Greedy Algorithm**을 기초로 당장 눈앞의 최소 비용을 선택해, 결과적으로 최적의 솔루션을 찾는 알고리즘
 <br>
 
-<image src="https://programmingpraxis.files.wordpress.com/2010/04/kruskal.png?w=460" width="80%" >
+<image src="https://programmingpraxis.files.wordpress.com/2010/04/kruskal.png?w=460" width="60%" >
 
 ### :pencil2: *Union-Find Algorithm*
 
