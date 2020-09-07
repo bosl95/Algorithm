@@ -1,4 +1,4 @@
-# Backtracking 알고리즘
+# Backtracking Algorithm
 
 ## :pencil2: Concept
 
