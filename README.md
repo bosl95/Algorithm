@@ -1,3 +1,4 @@
+
 # :tada: Algorithm:tada:
 
 ## :heavy_check_mark: Contents
@@ -10,6 +11,7 @@
 - [*Function*](https://github.com/bosl95/Algorithm/tree/master/FUNCTION)
 - [*Greedy*](https://github.com/bosl95/Algorithm/tree/master/GREEDY)
 - [*Mathematics 1*](https://github.com/bosl95/Algorithm/tree/master/MATHEMATICS%201)
+- [*MST*](https://github.com/bosl95/Algorithm/tree/master/MST)
 - [*Recursion*](https://github.com/bosl95/Algorithm/tree/master/RECURSION)
 - [*Sort*](https://github.com/bosl95/Algorithm/tree/master/SORT)
 - *[IF](https://github.com/bosl95/Algorithm/tree/master/IF)/[For](https://github.com/bosl95/Algorithm/tree/master/FOR)/[While](https://github.com/bosl95/Algorithm/tree/master/WHILE)*
