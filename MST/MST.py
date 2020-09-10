@@ -37,6 +37,9 @@ def kruskal(graph):
     edges = graph['edges']
     edges.sort()
 
+    print(edges)
+    input()
+
     # 3. 간선 연결 (No Cycles)
     for edge in edges:
         w, v, u = edge
@@ -47,7 +50,7 @@ def kruskal(graph):
     return mst
 
 mygraph = {
-    'vertices': ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+    'vertices': ['A', 'B', 'C', 'D', 'E', 'F'],
     'edges': [
         (7, 'A', 'B'),
         (5, 'A', 'D'),
@@ -59,20 +62,22 @@ mygraph = {
         (5, 'C', 'E'),
         (5, 'D', 'A'),
         (9, 'D', 'B'),
-        (7, 'D', 'E'),
+        (15, 'D', 'E'),
         (6, 'D', 'F'),
         (7, 'E', 'B'),
         (5, 'E', 'C'),
-        (7, 'E', 'D'),
+        (15, 'E', 'D'),
         (8, 'E', 'F'),
-        (9, 'E', 'G'),
+        # (9, 'E', 'G'),
         (6, 'F', 'D'),
         (8, 'F', 'E'),
-        (11, 'F', 'G'),
-        (9, 'G', 'E'),
-        (11, 'G', 'F')
+        # (11, 'F', 'G'),
+        # (9, 'G', 'E'),
+        # (11, 'G', 'F')
     ]
 }
 
 print(kruskal(mygraph))
+print(parent)
+print(rank)
 # result : [(5, 'A', 'D'), (5, 'C', 'E'), (6, 'D', 'F'), (7, 'A', 'B'), (7, 'B', 'E'), (9, 'E', 'G')]

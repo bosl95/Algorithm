@@ -28,6 +28,7 @@
 
 ### :pushpin: Kruskal MST Algorithm
 
+#### 가장 가중치가 작은 간선부터 선택하면서 MST를 구하는 방식
 
 <br>
 <br>
@@ -96,5 +97,20 @@
 
 ### :pushpin: Prim Mst Algorithm
 
-특정 정점에서 시작, 해당 정점에 연결된 가장 가중치가 작은 간선을 선택, 간선으로 연결된 간선 중에 가장 가중치가 작은 간선을 택하는 알고리즘.
+#### 특정 정점에서 시작, 해당 정점에 연결된 가장 가중치가 작은 간선을 선택, 간선으로 연결된 간선 중에 가장 가중치가 작은 간선을 택하는 방식
 <br>
+
+<image src="https://www.fun-coding.org/00_Images/prim1.png"  width="70%">
+<image src="https://www.fun-coding.org/00_Images/prim2.png" width="70%">
+<image src="https://www.fun-coding.org/00_Images/prim3.png" width="70%">
+<br>
+
+#### :mag: Process
+1. 모든 간선 정보 저장 (adjacent_edges)
+2. 임의 정점 선택, 연결된 노드 집합(connected_nodes)에 삽입
+3. 선택 정점의 연결 간선들을 간선 리스트에 삽입(candidate_edge_list)
+4. 간선 리스트(candidate_edge_list)에서 최소 가중치를 가지는 간선부터 추출
+	- 해당 간선에 연결된 인접 정점이 connected_nodes에 이미 들어있다면 skip (cycle 발생을 막기 위해)
+	- 해당 간선에 연결된 인접 정점이 connected_nodes에 들어 있지 않으면, 해당 간선을 선택하고 간선 정보를 ``mst``에 삽입
+		- 해당 간선에 연결된 인접 정점 간선 중 ``connected nodes``에 없는 노드와  연결된 간선들만 candidate_edge_list에 삽입
+		-  connected_nodes에 있는 노드와 연결된 간선들을 간선 리스트에 삽입해도 해당 간선은 스킵될 것이나 **어차피 스킵될 간선을 candidate_edge_list에 넣지 않음으로써 시간을 줄일 수 있음**(~~최소 힙 구조~~)
