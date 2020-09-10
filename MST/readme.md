@@ -27,7 +27,7 @@
   
 ---  
   
-### :pushpin: Kruskal MST Algorithm  
+## :pushpin: Kruskal MST Algorithm  
   
 #### 가장 가중치가 작은 간선부터 선택하면서 MST를 구하는 방식  
   
@@ -87,16 +87,20 @@
   
 #### :point_right: **Union-by-rank**+ **Path Compression** 시간 복잡도 : O(M*logN*)  
 <br>  
-  
-#### - 예제  
+ 
+ <details>
+<summary>  :point_right: 예제 </summary>
+<br> 
   
 <image src="https://lh5.googleusercontent.com/27mvNFS1SLjQMzYuGBxkyCjOeTwe3-hWxOSevks7Mt-9z42vcRNEyFZ690oF9EJWAWEP9NlxSQcwlQ_xA2NlyW2ltQPCFckiFjj0JqLBXNuzIBdumshK55tQUeFvFRybFA0VrGso" width="70%">  
   
 <image src="https://lh4.googleusercontent.com/Hq_nqK7mcTA2OXJxoOK4rk7BCVhesothi8tekVPc5SF0nWgJSFccnX9vUBiN4wUm8KTHVsBw_SLc7DUGls5tLKuYVz9F3U05mFVZeb2tYNoEdB-R88ssHMsmtUJFyVPHjAkWeD2g" width="70%">  
   
+</div>
+</details>
 <br>  
   
-### :pushpin: Prim Mst Algorithm  
+## :pushpin: Prim Mst Algorithm  
   
 #### 특정 정점에서 시작, 해당 정점에 연결된 가장 가중치가 작은 간선을 선택, 간선으로 연결된 간선 중에 가장 가중치가 작은 간선을 택하는 방식  
 <br>  
@@ -115,4 +119,36 @@
 		⇒ 해당 간선을 선택, 해당 간선 정보를 'MST' 배열에 저장
 4. 추출한 간선은 간선 리스트에서 제거
 5. 간선 리스트에 더 이상 간선이 없을 때까지 반복
+
+<br>
+
+### :pencil2: 우선 순위 큐 활용하기
+
+- ``heapq``를 이용하여 우선 순위 큐 만들기
+
+		myedges = [  
+		    (7, 'A', 'B'), (5, 'A', 'D'),  
+		  (8, 'B', 'C'), (9, 'B', 'D'), (7, 'B', 'E'),  
+		  (5, 'C', 'E'),  
+		  (7, 'D', 'E'), (6, 'D', 'F'),  
+		  (8, 'E', 'F'), (9, 'E', 'G'),  
+		  (11, 'F', 'G')  
+		]  
+		  
+		import heapq  
+		  
+		graph = [[7, 'A'], [5, 'B'], [3, 'C']]  
+		  
+		heapq.heapify(graph)  
+		  
+		for index in range(len(graph)):  
+		    print(heapq.heappop(graph))  
+		  
+		print(graph)
+		'''  
+		[3, 'C']
+		[5, 'B']
+		[7, 'A']
+		[]
+		'''
 
