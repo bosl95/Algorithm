@@ -1,20 +1,14 @@
-## [[1463]1로만들기](https://www.acmicpc.net/problem/1463)
 
-> 입력
+# [[1463]1로만들기](https://www.acmicpc.net/problem/1463)  
+  
+## Dynamic Programming을 이용한 풀이  
+  
+<image src="https://lh5.googleusercontent.com/r_bu-peWl_WAAFTmM9NrqI8cRi3SCufWnXyh88mgAD-r5MdPVvnBIabG5DNC7evxyCej2wJGm3-T3UnNJfHPDMVKuEY3bzcqqO0UQ3zvlBzNWlRmCp655VQyZUigBSl-Ufh93S3J" width="80%">
+  
+처음에 DP[1], DP[2], DP[2]를 모두 1로 초기화해주었는데 DP[1]를 0으로 설정해줘야했다.  <br>
+  
 
-	10
-
-> 출력
-
-	3
-
-> ### Dynamic Programming을 이용한 풀이
-
-**![](https://lh5.googleusercontent.com/r_bu-peWl_WAAFTmM9NrqI8cRi3SCufWnXyh88mgAD-r5MdPVvnBIabG5DNC7evxyCej2wJGm3-T3UnNJfHPDMVKuEY3bzcqqO0UQ3zvlBzNWlRmCp655VQyZUigBSl-Ufh93S3J)**
-
-처음에 DP[1], DP[2], DP[2]를 모두 1로 초기화해주었는데 DP[1]를 0으로 설정해줘야했다.
-
-> ### 다른 풀이
+### 다른 풀이
 
 	l = [int(input())]; n=0
 	while 1 not in l:

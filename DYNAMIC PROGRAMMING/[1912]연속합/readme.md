@@ -1,16 +1,10 @@
-## [[1912]연속합](https://www.acmicpc.net/problem/1912)
 
-> 입력
+# [[1912]연속합](https://www.acmicpc.net/problem/1912)
 
-	10
-	10 -4 3 1 5 6 -35 12 21 -1
+## Dynamic Programming을 이용한 풀이
 
-> 출력
+<image src="https://lh6.googleusercontent.com/FFt-D88hCXkf57cFd4bE_xobkIsAOuG0nZDIHN9DjDZ-LBzVrHfglF5tTWGBL4vmiaEhOm0v5yECE1UpjTMfCEK77AKNOaYp0j-aawkLdtI-SPugfjm5bgzX6_3pTyCATh5wvYbB" width="80%">
 
-	33
-
-> ### Dynamic Programming을 이용한 풀이
-**![](https://lh6.googleusercontent.com/FFt-D88hCXkf57cFd4bE_xobkIsAOuG0nZDIHN9DjDZ-LBzVrHfglF5tTWGBL4vmiaEhOm0v5yECE1UpjTMfCEK77AKNOaYp0j-aawkLdtI-SPugfjm5bgzX6_3pTyCATh5wvYbB)**
 - 규칙이 **연속되는 숫자들의 합**이다.
 	- DP[k] : k번째 숫자를 기준으로 나올수 있는 최대 값이라 할때 둘 중 하나의 값을 가진다.
 		1) DP[k-1] + arr[k] : k-1번째 기준으로 나올수 있는 최대값 + k번째 숫자

@@ -1,21 +1,8 @@
-## [[2156]포도주 시식](https://www.acmicpc.net/problem/2156)
+# [[2156]포도주 시식](https://www.acmicpc.net/problem/2156)
 
-> 입력
+## Dynamic Programming을 이용한 풀이
 
-	6
-	6
-	10
-	13
-	9
-	8
-	1
-
-> 출력
-
-	33
-
-> #### Dynamic Programming을 이용한 풀이
-**![](https://lh4.googleusercontent.com/BVwDMsxXCqUuhRfyEWlynDzZxPr5FbXr3ZWWU9gsXMk_oXeQbS5jqLtv__3nCpIhW-DCa4DQYhWeFQ8I2jrKl81RxcFUBDzp_Lf1hdkXox9UbZyudGWKobNaBdZNyYJ9Ziikj5J6)**
+<image src="https://lh4.googleusercontent.com/BVwDMsxXCqUuhRfyEWlynDzZxPr5FbXr3ZWWU9gsXMk_oXeQbS5jqLtv__3nCpIhW-DCa4DQYhWeFQ8I2jrKl81RxcFUBDzp_Lf1hdkXox9UbZyudGWKobNaBdZNyYJ9Ziikj5J6" width="80%">
 
 기초적인 DP 문제.
 문제는 어렵지 않았으나 **sys 모듈 사용 여부에 따라 시간이 많이 단축**되는 것을 확인했다.
