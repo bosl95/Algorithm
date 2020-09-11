@@ -37,8 +37,6 @@ def kruskal(graph):
     edges = graph['edges']
     edges.sort()
 
-    print(edges)
-    input()
 
     # 3. 간선 연결 (No Cycles)
     for edge in edges:
@@ -76,6 +74,7 @@ mygraph = {
         # (11, 'G', 'F')
     ]
 }
+
 
 print(kruskal(mygraph))
 print(parent)
