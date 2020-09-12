@@ -1,4 +1,5 @@
 
+
 # MST(Minimum Spanning Tree)  
   
 ## :pushpin: Concept  
@@ -120,6 +121,29 @@
 4. 추출한 간선은 간선 리스트에서 제거
 5. 간선 리스트에 더 이상 간선이 없을 때까지 반복
 
+<br>  
+ 
+ <details>
+<summary>  :point_right: 우선 순위 큐 사용하기 </summary>
+<br> 
+
+	import heapq
+
+	h = []
+	heapq.heappush(h, (3, "a"))
+	heapq.heappush(h, (5, "b"))
+	heapq.heappush(h, (1, "d"))
+	heapq.heappush(h, (4, "e"))
+
+	print(heapq.heappop(h)) # (1, "d")
+	print(heapq.heappop(h)) # (3, "a")
+	print(heapq.heappop(h)) # (4, "e")
+	print(heapq.heappop(h)) # (5, "b")
+
+</div>
+</details>
+<br>  
+
 <br>
 
 ### :pencil2: 우선 순위 큐 활용하기
@@ -151,4 +175,5 @@
 		[7, 'A']
 		[]
 		'''
+
 
