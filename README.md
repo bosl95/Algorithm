@@ -1,4 +1,3 @@
-
 # :tada: Algorithm:tada:
 
 ## :heavy_check_mark: Contents
@@ -10,6 +9,7 @@
 - [*Dynamic Programming*](https://github.com/bosl95/Algorithm/tree/master/DYNAMIC%20PROGRAMMING)
 - [*Function*](https://github.com/bosl95/Algorithm/tree/master/FUNCTION)
 - [*Greedy*](https://github.com/bosl95/Algorithm/tree/master/GREEDY)
+- [*Graph*](https://github.com/bosl95/Algorithm/tree/master/Graph)
 - [*Mathematics 1*](https://github.com/bosl95/Algorithm/tree/master/MATHEMATICS%201)
 - [*MST*](https://github.com/bosl95/Algorithm/tree/master/MST)
 - [*Recursion*](https://github.com/bosl95/Algorithm/tree/master/RECURSION)
