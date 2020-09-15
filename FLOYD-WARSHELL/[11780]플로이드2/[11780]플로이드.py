@@ -6,7 +6,7 @@ N = int(input())
 M = int(input())
 
 city = [[inf]*N for _ in range(N)]
-route = [[[] for _ in range(M)] for _ in range(N)]
+route = [[0]*N for _ in range(N)]
 
 
 for _ in range(M):
