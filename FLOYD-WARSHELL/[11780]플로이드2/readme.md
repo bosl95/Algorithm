@@ -5,10 +5,10 @@
 ### 최단 경로를 구해주어야하는데, 이때 
 	
 	for k in range(N):  
-    for i in range(N):  
-        for j in range(N):  
-            if i!=j and city[i][j] > city[i][k]+city[k][j]:  
-                city[i][j] = city[i][k]+city[k][j]
+	    for i in range(N):  
+		for j in range(N):  
+		    if i!=j and city[i][j] > city[i][k]+city[k][j]:  
+			city[i][j] = city[i][k]+city[k][j]
 
 ### 이 부분에서 도시 k를 route[i][j]에 추가해주는 방법으로 풀었으나, 이렇게 되면 도시 k로 이동하였을 때 짧아질 이동 경로는 고려하지 않게 되기 때문에 최소 비용일지 언정 최단 이동 경로는 구할 수 없다.
 
