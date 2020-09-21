@@ -18,8 +18,7 @@
 - *[IF](https://github.com/bosl95/Algorithm/tree/master/IF)/[For](https://github.com/bosl95/Algorithm/tree/master/FOR)/[While](https://github.com/bosl95/Algorithm/tree/master/WHILE)*  
 - [*String*](https://github.com/bosl95/Algorithm/tree/master/STRING)  
   
-  
-### :dart: Data Structure  
+ ### :dart: Data Structure  
 - [*Array*](https://github.com/bosl95/Algorithm/tree/master/ARRAY)  
 - [*Stack*](https://github.com/bosl95/Algorithm/tree/master/STACK)  
 - [*Queue/Deque*](https://github.com/bosl95/Algorithm/tree/master/QUEUE_DEQUE)  
@@ -55,3 +54,22 @@
 ### int는 4byte의 메모리를 가진다. <br>
 ### 512MB는 1.2 억개의 int를 가진다.<br>
 ### 만약,  풀이가 5억인 배열이 필요하다면 주어진 메모리 제한을 만족하지 못하므로 다른 풀이를 찾아야한다.
+
+
+## :pushpin: Python EOF
+
+### #1
+
+	while True:
+		try:
+			a, b = map(int, input().split())
+			print(a+b)
+		except:
+			break
+			
+### #2
+	
+	import sys
+	for line in sys.stdin:
+		a, b = map(int, line.split())
+		print(a + b)
