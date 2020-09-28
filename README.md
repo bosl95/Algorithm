@@ -4,6 +4,7 @@
 ### :dart: Algorithm  
 - [*Back Tracking*](https://github.com/bosl95/Algorithm/tree/master/BACK%20TRACKING)  
 - [*Brute Force*](https://github.com/bosl95/Algorithm/tree/master/BRUTE%20FORCE)  
+- [*BINARY SEARCH*](https://github.com/bosl95/Algorithm/tree/master/BINARY%20SEARCH)
 - [*DFS/BFS*](https://github.com/bosl95/Algorithm/tree/master/DFS_BFS)  
 - [*Divide and Conquer*](https://github.com/bosl95/Algorithm/tree/master/DIVIDE%20AND%20CONQUER)  
 - [*Dynamic Programming*](https://github.com/bosl95/Algorithm/tree/master/DYNAMIC%20PROGRAMMING)  
