@@ -74,3 +74,10 @@
 	for line in sys.stdin:
 		a, b = map(int, line.split())
 		print(a + b)
+
+## :pushpin: Python KeyError
+	
+	X = dict()
+	if not X[i]:	# KeyError
+	
+	if X.get(i):	# OK
