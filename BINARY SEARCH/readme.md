@@ -15,3 +15,7 @@
 		     return mid
 		 
 		 return -1
+
+## :pushpin: Two Pointer
+### Two Pointer는 양 끝단에서 한칸씩 이동하면서 알맞는 값을 찾는 방식을 사용하며, left와 right가 중간 어디서 만날 때까지 계속 탐색을 진행한다.<br>
+### 이진 탐색은 *Log(N)* 을 보장하는 반면, two pointer는 최악의 경우 *N*의 시간복잡도를 가집니다.
