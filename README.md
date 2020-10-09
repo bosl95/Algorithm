@@ -81,3 +81,10 @@
 	if not X[i]:	# KeyError
 	
 	if X.get(i):	# OK
+	
+## :pushpin: 완전 탐색 시 시간 초과가 나는 경우
+
+1. 투 포인터 알고리즘 시도해보기
+2. 이분 탐색 시도해보기(binary search)
+3. dp(Dynamic programming) 시도해보기
+4. 그리디(Greedy) 시도해보기
