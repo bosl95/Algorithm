@@ -1,6 +1,6 @@
 # [[2467]용액](https://www.acmicpc.net/problem/2467)
 
-## Binary Search를 이용하지 않은 풀이
+## Two Pointer를 이용한 풀이
 ### [[2003]수들의 합2](https://github.com/bosl95/Algorithm/tree/master/BINARY%20SEARCH/%5B2003%5D%EC%88%98%EB%93%A4%EC%9D%98%ED%95%A92)의 풀이를 참고하여 유사한 방식으로 투 포인터 알고리즘을 이용하였다.<br>
 
 <image src="https://lh6.googleusercontent.com/azJ6JvDYjj7D0d0raalGbNZXQNcYATRPhHXceDO43f3_EDGQYYqP4HVsjN81Vr3jmvsA5TjSfG0xmXOx-pKnRKuBBl8GcqC7o0YgOGDAAhV7dyf9y43CIBAQxONU9UYoyN9bbgJ2" width="70%">
