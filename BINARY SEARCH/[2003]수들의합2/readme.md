@@ -1,6 +1,6 @@
 # [[2003]수들의 합](https://www.acmicpc.net/problem/2003)
 
-## Binary Search를 이용하지 않은 풀이
+## Two Pointer를 이용한 풀이
 
 <image src="https://lh6.googleusercontent.com/8xe3ew9SDvr2BFd72MKZSSKRudGVDuD8G3yCu_9IDWIisgPtGGs4sqpN_DtorxqehZd4QdgavqF_ftgAxaCdHz7kQXYLCm43xrhdFn48KeMjxcnPluWOuokfbd0Aib8h6vXtUshr" width="70%">
 
