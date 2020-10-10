@@ -18,6 +18,7 @@
 - [*Sort*](https://github.com/bosl95/Algorithm/tree/master/SORT)  
 - *[IF](https://github.com/bosl95/Algorithm/tree/master/IF)/[For](https://github.com/bosl95/Algorithm/tree/master/FOR)/[While](https://github.com/bosl95/Algorithm/tree/master/WHILE)*  
 - [*String*](https://github.com/bosl95/Algorithm/tree/master/STRING)  
+- [*Tree*](https://github.com/bosl95/Algorithm/tree/master/TREE)
   
  ### :dart: Data Structure  
 - [*Array*](https://github.com/bosl95/Algorithm/tree/master/ARRAY)  
@@ -81,6 +82,8 @@
 	if not X[i]:	# KeyError
 	
 	if X.get(i):	# OK
+	
+<br>
 	
 ## :pushpin: 완전 탐색 시 시간 초과가 나는 경우
 
