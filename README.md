@@ -27,7 +27,10 @@
   
   
 ### :dart: Etc.  
-- [*Samsung Software Expert Academy*](https://github.com/bosl95/Algorithm/tree/master/SW%20Expert%20Academy)  
+- [*Samsung Software Expert Academy*](https://github.com/bosl95/Algorithm/tree/master/SW%20Expert%20Academy)
+
+<br>
+  
 ---
 
 ## :pushpin: Time Complexity
@@ -57,6 +60,7 @@
 ### 512MB는 1.2 억개의 int를 가진다.<br>
 ### 만약,  풀이가 5억인 배열이 필요하다면 주어진 메모리 제한을 만족하지 못하므로 다른 풀이를 찾아야한다.
 
+<br>
 
 ## :pushpin: Python EOF
 
@@ -75,6 +79,8 @@
 	for line in sys.stdin:
 		a, b = map(int, line.split())
 		print(a + b)
+		
+<br>
 
 ## :pushpin: Python KeyError
 	
