@@ -81,6 +81,9 @@
 		a, b = map(int, line.split())
 		print(a + b)
 		
+### cf
+#### sys.stdin.readline은 \n을 포함하는 것에 주의 ==> strip()을 통해 공백을 제거 
+		
 <br>
 
 ## :pushpin: Python KeyError
