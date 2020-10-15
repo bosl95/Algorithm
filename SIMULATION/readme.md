@@ -16,5 +16,5 @@
 ## :pushpin: 부분집합
 
 - ### 원소가 N개인 집합에서 부분집합의 원소는 *O(2<sup>N</sup>)*
-	### ⇒ 2진수를 사용하여  20중 for문을 짤 필요 없이 해결할 수있다. ([부분집합의 합]())
+	### ⇒ 2진수를 사용하여  20중 for문을 짤 필요 없이 해결할 수있다. ([부분수열의 합](https://github.com/bosl95/Algorithm/tree/master/SIMULATION/%5B1182%5D%EB%B6%80%EB%B6%84%EC%88%98%EC%97%B4%EC%9D%98%20%ED%95%A9))
 
