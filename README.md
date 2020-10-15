@@ -15,7 +15,8 @@
 - [*Mathematics 1*](https://github.com/bosl95/Algorithm/tree/master/MATHEMATICS%201)
 - [*Hash&Binary Search&Heap*](https://github.com/bosl95/Algorithm/tree/master/HASH_BINARY%20SEARCH_HEAP)  
 - [*MST*](https://github.com/bosl95/Algorithm/tree/master/MST)  
-- [*Recursion*](https://github.com/bosl95/Algorithm/tree/master/RECURSION)  
+- [*Recursion*](https://github.com/bosl95/Algorithm/tree/master/RECURSION)
+- [*Simulation*](https://github.com/bosl95/Algorithm/tree/master/SIMULATION)
 - [*Sort*](https://github.com/bosl95/Algorithm/tree/master/SORT)  
 - *[IF](https://github.com/bosl95/Algorithm/tree/master/IF)/[For](https://github.com/bosl95/Algorithm/tree/master/FOR)/[While](https://github.com/bosl95/Algorithm/tree/master/WHILE)*  
 - [*String*](https://github.com/bosl95/Algorithm/tree/master/STRING)  
