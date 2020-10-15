@@ -1,3 +1,8 @@
+# String 
+
+### 너무 쉬운 문제는 readme.md를 생략하였다.
+
+<br>
 
 # KMP 
 
