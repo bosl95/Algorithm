@@ -1,6 +1,8 @@
 
 ## simulation을 이용한 풀이
 
+<image src="https://lh4.googleusercontent.com/z5V_9kIeva5WLqgaunm3ldgAnGQ2z6e3ezVrbO-m5ssNORgLclP_ERuLFh5IylN6YE5V9PB6Y9QsFi0nsoCKs4KxjUaBHxkZeP5ulC2c-34kjm2t3u8kmDf3Uon4E5ipt3ojKQ6x" width="70%">
+
 ### 1차 풀이 (~~오답~~)
 
     import sys, heapq as hp
@@ -211,3 +213,4 @@
     if kind == 5:
         next_area = check(areas, (0, 1, 2, 3), a, b)
         dfs(next_area, cctvs, idx+1)
+        
