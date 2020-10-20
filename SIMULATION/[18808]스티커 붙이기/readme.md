@@ -22,7 +22,7 @@
 
 ### 내가 푼 풀이 (~~시간초과~~)
 
-<image src="https://lh3.googleusercontent.com/f8501HQYt-e8ADDidIAJke1ThtUkFxWhhyvFnEEbVhMRnba8pw3-6HMKyQVqOfWcUHyLiCrE4u8M79SL12aDDyQobZvYvjulM-LCF4fIE_l1Yy4wvp_PVlknIprGcM7F_zCz3gFd">
+<image src="https://lh3.googleusercontent.com/f8501HQYt-e8ADDidIAJke1ThtUkFxWhhyvFnEEbVhMRnba8pw3-6HMKyQVqOfWcUHyLiCrE4u8M79SL12aDDyQobZvYvjulM-LCF4fIE_l1Yy4wvp_PVlknIprGcM7F_zCz3gFd" width='70%'>
 
 <br>
 
