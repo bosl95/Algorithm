@@ -1,8 +1,6 @@
 # [내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915) 
 
-- 프로그래머스 level 1
-
-## 문제 해결 방식
+## String을 이용한 문제 풀이
 
 1. n번째 글자의 ord 값을 key 값으로 가지는 dict에 strings[i]를 추가한다.
 2. 1번이 끝나면 dict의 key 값을 정렬하여 순차적으로 answer 배열에 넣어준다.
