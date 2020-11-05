@@ -1,6 +1,6 @@
 # [내림차순 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917?language=python3)
 
-## 문제 풀이
+## String을 이용한 풀이
 
 - 대문자와 소문자를 구분해서 내림차 정렬하는 문제였다.
 - 대문자 소문자가 섞인 문자열을 sort하면
