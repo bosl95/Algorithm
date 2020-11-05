@@ -1,6 +1,6 @@
 # [문자열 다루기](https://programmers.co.kr/learn/courses/30/lessons/12918)
 
-## 문제 풀이
+## String을 이용한 풀이
 
 - words.isdigit() : 문자가 숫자 인지 확인
 - cf] words.isalpha() : 문자가 알파벳인지 확인
