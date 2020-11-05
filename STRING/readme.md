@@ -4,6 +4,14 @@
 
 <br>
 
+## 문자열의 정렬
+
+- 대문자 소문자가 섞인 문자열을 sort하면
+    - 대문자 우선 정렬
+    - 소문자 정렬 순으로 이루어 진다.
+
+<br>
+
 # KMP 
 
 <image src="https://user-images.githubusercontent.com/34594339/95879820-bf9c5c00-0db1-11eb-960a-a333a822b37f.png" width="70%">
