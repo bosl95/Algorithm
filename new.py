@@ -1,24 +1,30 @@
-def solution(str1, str2):
-    A, B = [], []
-    p1, p2 = 0, 0
-    for i in range(len(str1)-1):
-        x, y = ord(str1[i]), ord(str1[i+1])
-        if (64 < x < 91 or 96 < x < 123) and (64 < y < 91 or 96 < y < 123):
-            A.append(str1[i:i+2].lower())
+def DFS(i, edge, visit):
+    global answer
+    s = 0
+    for v in visit:
+        if v: s += 1
+    if answer < s: answer = s
 
-    for i in range(len(str2)-1):
-        x, y = ord(str2[i]), ord(str2[i+1])
-        if (64 < x < 91 or 96 < x < 123) and (64 < y < 91 or 96 < y < 123):
-            B.append(str2[i:i+2].lower())
+    for x in edge[i]:
+        if visit[x] < 2:
+            visit[x] += 1
+            DFS(x, edge, visit)
+            visit[x] -= 1
 
-    for a in A:
-        if a in B:
-            B.remove(a)
-            p1+=1
-        p2+=1
-    p2+=len(B)
+answer = 0
+def solution(t):
+    tnum = len(t)
+    edge = [[] for _ in range(tnum+1)]
+    for i, v in t:
+        edge[i].append(v)
+        edge[v].append(i)
 
-    if p1==0 and p2==0: return 65536
-    return int((p1/p2)*65536)
+    for k in [i for i in range(tnum+1)]:
+        visit = [0] * (tnum + 1)
+        visit[k] += 1
+        DFS(k, edge, visit)
+    return answer
 
-print(solution("aa1+aa2", "AAAA12"))
+
+print(solution([[5,1],[2,5],[3,5],[3,6],[2,4],[4,0]]))
+# print(solution([[2,5],[2,0],[3,2],[4,2],[2,1]]))
