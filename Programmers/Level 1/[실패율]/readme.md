@@ -49,7 +49,7 @@
 
 7. 3 ~ 6을 반복한다. 
 8. 이때 num이 0인 경우 (i번째 스테이지에 도달한 사람이 없는 경우)에 주의해야한다.
-9. 딕셔너리의 값을 기준으로 내림차순 정렬하여 키값만을 가져온다. [람다 함수에 대한 부분은 이 곳을 참고하자.](https://github.com/bosl95/algorithm/READEMD.md#118)
+9. 딕셔너리의 값을 기준으로 내림차순 정렬하여 키값만을 가져온다. [람다 함수에 대한 부분은 이 곳을 참고하자.](https://github.com/bosl95/algorithm/READEMD.md#L118)
 
        return sorted(result, key=lambda x:result[x], reverse=True)
 
