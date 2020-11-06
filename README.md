@@ -39,7 +39,7 @@
   
 ### :dart: Etc.  
 - [*Samsung Software Expert Academy*](https://github.com/bosl95/Algorithm/tree/master/SW%20Expert%20Academy)
-- [*Programmers*]()
+- [*Programmers*](https://github.com/bosl95/Algorithm/tree/master/Programmers)
 
 <br>
   
@@ -112,6 +112,37 @@
 2. 이분 탐색 시도해보기(binary search)
 3. dp(Dynamic programming) 시도해보기
 4. 그리디(Greedy) 시도해보기
+
+<br>
+
+## :pushpin: Python에서 많이 쓰이지만 헷갈리는 Lambda 함수에 대해 알아보기
+
+      # 일반 함수
+      def ten(x):
+        return x+10
+       
+      ten(1)       # 11
+      
+      # lambda 함수
+      ten = lambda x: x+10
+      ten(1)        # 11
+
+- 일반 함수를 한 줄로 짧게 쓸 수 있다.
+
+<br>
+
+- result라는 dictionary가 있다고 가정해보자.
+
+      sorted(result, key=lambda x:result[x], reverse=True)
+      
+   1. result는 [result의 키]로 이루어진 리스트 형태이다.
+   2. 키값을 하나씩 꺼낸 것이 x이다.
+   3. result[x]는 결국 키가 x인 딕셔너리의 값이다. 즉, '값'을 기준으로 거꾸로 정렬한다는 의미이다
+   4. 대신 결과값으로는 키 값만 다시 되돌아온다. 1번에서 키로 주어졌기 때문이다.
+  
+- 같은 결과를 가지는 코드는 아래와 같다.
+
+      sorted(result.items(), key=lambda x:result[x[0]], reverse=True)
 
 <br>
 
