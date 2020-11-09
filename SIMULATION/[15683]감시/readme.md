@@ -173,15 +173,17 @@
         room.append(t)
     solution(N, M, CCTV)
     
-### cctv 5 ~ cctv 1 까지 순차적으로 계산하여 구했다.<br>
-### 당연하게도, 5를 제외한 어떤 cctv도 우선순위가 없다.(순서를 조합하여 가장 최소 사각지대를 가질 수 있도록 찾아야한다.)<br>
+- cctv 5 ~ cctv 1 까지 순차적으로 계산하여 구했다.<br>
+- 당연하게도, ~~5를 제외한~~ 어떤 cctv도 우선순위가 없다.(순서를 조합하여 가장 최소 사각지대를 가질 수 있도록 찾아야한다.)<br>
 
 <br>
 
 ## 다른 사람의 풀이
-### CCTV가 누가 먼저 들어오는 건 사실상 상관이 없다. 각 CCTV가 선택한 방향에 따라 조합이 나뉜다.<br>
-### DFS를 돌면서 배열을 복사하는 것은 시간이 오래 걸릴 것이라고 생각해서 배제하였는데, 다른 사람의 풀이를 보니 시간 초과 없이 돌아간다.<br>
-### DFS 구현하는 부분을 잘 보고 내 코드에 맞게 다시 고쳐봐야겠다.
+- CCTV가 누가 먼저 들어오는 건 사실상 상관이 없다. 각 CCTV가 선택한 방향에 따라 조합이 나뉜다.<br>
+- DFS를 돌면서 배열을 복사하는 것은 시간이 오래 걸릴 것이라고 생각해서 배제하였는데, 다른 사람의 풀이를 보니 시간 초과 없이 돌아간다.<br>
+- DFS 구현하는 부분을 잘 보고 내 코드에 맞게 다시 고쳐봐야겠다.
+
+<br>
 
     def dfs(areas, cctvs, idx):
     global mins
@@ -214,3 +216,32 @@
         next_area = check(areas, (0, 1, 2, 3), a, b)
         dfs(next_area, cctvs, idx+1)
         
+        
+<br>
+
+### 2차 시도
+
+- cctv의 우선순위가 없다는 것을 또 인지하지 못했다!!!
+- DFS 탐색을 진행함에 있어 각 cctv가 어느 방향에 놓이는 게 좋을 지 찾기 위하여 모든 cctv의 방향을 탐색하는 코드!!! (유심히 보고 다음번에는 꼭 내 힘으로 코드를 작성할 수 있도록 하자)
+
+<br>
+
+     if num == 1:
+            for i in range(4):
+                nxt_room, nxt_cnt = check(room, [i], x, y, cnt)
+                solution(nxt_room, nxt_cnt, idx + 1)
+        elif num == 2:
+            for i in [[0, 1], [2, 3]]:
+                nxt_room, nxt_cnt = check(room, i, x, y, cnt)
+                solution(nxt_room, nxt_cnt, idx + 1)
+        elif num == 3:
+            for i in [[0, 2], [1, 2], [1, 3], [0, 3]]:
+                nxt_room, nxt_cnt = check(room, i, x, y, cnt)
+                solution(nxt_room, nxt_cnt, idx + 1)
+        elif num == 4:
+            for i in [[0, 1, 2], [0, 2, 3], [0, 1, 3], [1, 2, 3]]:
+                nxt_room, nxt_cnt = check(room, i, x, y, cnt)
+                solution(nxt_room, nxt_cnt, idx+1)
+        else:
+            nxt_room, nxt_cnt = check(room, [0, 1, 2, 3], x, y, cnt)
+            solution(nxt_room, nxt_cnt, idx+1)
