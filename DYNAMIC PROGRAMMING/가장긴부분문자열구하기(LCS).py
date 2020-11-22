@@ -12,4 +12,14 @@ for i in range(1, n+1):
         else:
             arr[i][j] = max(arr[i-1][j], arr[i][j-1])
 
+print(end='  ')
+for i in range(m):print(y[i], end=' ')
+print()
+for i in range(1, n+1):
+    print(x[i-1], end= ' ')
+    for j in range(1, m+1):
+        print(arr[i][j], end=' ')
+    print()
+
+print(n, m)
 print(arr[n][m])
