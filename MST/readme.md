@@ -28,7 +28,7 @@
   
 ---  
   
-## :pushpin: Kruskal MST Algorithm  
+## :pushpin: [Kruskal MST Algorithm](https://github.com/bosl95/Algorithm/blob/master/MST/Kruskal_MST.py)  
   
 #### 가장 가중치가 작은 간선부터 선택하면서 MST를 구하는 방식  
   
