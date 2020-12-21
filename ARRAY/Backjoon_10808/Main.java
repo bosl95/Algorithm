@@ -1,4 +1,4 @@
-package ARRAY.backjoon_10808;
+package ARRAY.Backjoon_10808;
 
 import java.io.BufferedReader;
 import java.io.IOException;
