@@ -1,4 +1,4 @@
-package ARRAY.backjoon_10807;
+package ARRAY.Backjoon_10807;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
 
         int N = Integer.valueOf(br.readLine());
         String[] str = br.readLine().split(" ");
