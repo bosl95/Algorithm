@@ -34,10 +34,10 @@ public class Main {
                     sb.append(queue.isEmpty() ? 1 : 0);
                     break;
                 case "front":
-                    sb.append(queue.isEmpty()? -1 : queue.peekFirst());
+                    sb.append(queue.isEmpty() ? -1 : queue.peekFirst());
                     break;
                 case "back":
-                    sb.append(queue.isEmpty()? -1 : queue.peekLast());
+                    sb.append(queue.isEmpty() ? -1 : queue.peekLast());
                     break;
             }
             sb.append("\n");
