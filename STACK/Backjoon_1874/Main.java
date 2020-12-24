@@ -1,4 +1,4 @@
-package STACK.backjoon_1874;
+package STACK.Backjoon_1874;
 
 import java.io.BufferedReader;
 import java.io.IOException;
