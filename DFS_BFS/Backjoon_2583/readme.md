@@ -1,5 +1,7 @@
 > ## [[2583]영역 구하기](https://www.acmicpc.net/problem/2583)
 
+<image src='https://lh6.googleusercontent.com/TAAu22wLlvfLMGqSWxsZqBnJ6uL55JHDp-4GjTQn12jvbA5zWq3flDkREvKzvXIjjNwXhOCd7CeXVzpl8YCUCGbrHtZhq4TPjRWz4pxz22eSci21gLbCD7B471nRN5I0LF4jFC8u' width='70%'>
+
 >  #### 입력
 	5 7 3
 	0 2 4 4
