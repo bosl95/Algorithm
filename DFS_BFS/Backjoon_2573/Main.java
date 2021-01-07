@@ -45,6 +45,7 @@ public class Main {
             }
 
             time++;
+
             if ((amount == 0 && count == 1) || count == 0) {
                 time = 0;
                 break;
