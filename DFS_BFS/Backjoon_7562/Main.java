@@ -31,7 +31,6 @@ public class Main {
         }
         bw.flush();
         bw.close();
-
     }
 
     private static String bfs(int x, int y, int x_, int y_, int l) {
