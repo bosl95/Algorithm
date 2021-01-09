@@ -84,20 +84,6 @@ public class Main {
                     }
                 }
             }
-
-//            System.out.println("시작");
-//            for (int a = 0; a < n; a++) {
-//                for (int b = 0; b < n; b++) {
-//                    System.out.print(sea[a][b] + " ");
-//                }
-//                System.out.println();
-//            }
-//
-//            try {
-//                Thread.sleep(1000);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
         }
     }
 }
