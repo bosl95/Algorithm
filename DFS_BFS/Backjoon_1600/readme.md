@@ -101,7 +101,7 @@ public class Main {
 - 그런데 생각해보니, 어차피 bfs로 풀면 가장 최소가 되는 값을 찾을 수 있기 때문에 굳이 우선순위 큐를 둘 필요가 없었다.
 - 따라서 `deque`를 활용하여 바로 값을 리턴해줄 수 있도록 하였다.
 
-### 두번째 풀이 (`640ms`)<br>
+### 두번째 풀이 (`620ms`)<br>
 
 ```java
 import java.io.BufferedReader;
