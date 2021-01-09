@@ -49,22 +49,6 @@ public class Main {
             }
             bw.write("\n");
 
-//            System.out.println();
-//            for (int a = 0; a < h; a++) {
-//                for (int b = 0; b < w; b++) {
-//                    System.out.print(fireStep[a][b] + " ");
-//                }
-//                System.out.println();
-//            }
-//
-//            System.out.println();
-//            for (int a = 0; a < h; a++) {
-//                for (int b = 0; b < w; b++) {
-//                    System.out.print(building[a][b] + " ");
-//                }
-//                System.out.println();
-//            }
-
             fire.clear();
             stack.clear();
         }
