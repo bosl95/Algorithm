@@ -43,7 +43,7 @@ public class Main {
             dfs(next);
         } else if (student[next] != -1) {
             count++;
-            for (int i=next; i!=now; i=student[i]) {
+            for (int i = next; i != now; i = student[i]) {
                 count++;
             }
         }
