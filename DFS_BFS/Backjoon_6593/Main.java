@@ -61,7 +61,7 @@ public class Main {
                 int my = d[1] + dy[i];
                 int mz = d[2] + dz[i];
                 if (0 <= mx && mx < l && 0 <= my && my < r && 0 <= mz && mz < c) {
-                    if (building[mx][my][mz] == 0 || (building[mx][my][mz] > 0 && building[mx][my][mz] > building[d[0]][d[1]][d[2]] + 1)) {
+                    if (building[mx][my][mz] == 0) {
                         building[mx][my][mz] = building[d[0]][d[1]][d[2]] + 1;
                         deque.add(new int[]{mx, my, mz});
                     } else if (building[mx][my][mz] == -1) {
