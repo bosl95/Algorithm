@@ -33,3 +33,9 @@
 	  
 	f, s, g, u, d = map(int, input().split())  
 	print(solution(f, s, g, u, d))
+
+<br>
+
+### 주의해야할 점<br>
+
+<image src='https://lh3.googleusercontent.com/8GHGS7_4cVuvjCD4800fk3bmrcz99dgrVCSBhlyrua__qZvvA_K0FbtHbxUJvog6PlbUDWGTk9iuNyWkzq7Gr-XrIsXFgOHvKZb7xofQ6VKZtEUdqp9W1H7JgeMr2FZMFCUo1iBo' width='70%'>
