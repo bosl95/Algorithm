@@ -19,8 +19,8 @@ public class Main {
             System.out.println(0);
             return;
         }
-        int[] visit = new int[200001];
-        for (int i=0; i<200001; i++) {
+        int[] visit = new int[100001];
+        for (int i = 0; i < 100001; i++) {
             visit[i] = Integer.MAX_VALUE;
         }
         Deque<Integer> deque = new LinkedList<>();
@@ -39,8 +39,8 @@ public class Main {
                 visit[x + 1] = visit[x] + 1;
                 deque.add(x + 1);
             }
-            if (0 < x  && visit[x - 1] > visit[x] + 1) {
-                visit[x - 1]  = visit[x] + 1;
+            if (0 < x && visit[x - 1] > visit[x] + 1) {
+                visit[x - 1] = visit[x] + 1;
                 deque.add(x - 1);
             }
         }
