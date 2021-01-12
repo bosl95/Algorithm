@@ -20,8 +20,8 @@ public class Main {
             bw.close();
             return;
         }
-        int[] visit = new int[200001];
-        for (int i = 0; i < 200001; i++) {
+        int[] visit = new int[100001];
+        for (int i = 0; i < 100001; i++) {
             visit[i] = -1;
         }
         Deque<Integer> deque = new LinkedList<>();
