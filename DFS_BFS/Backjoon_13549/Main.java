@@ -20,30 +20,27 @@ public class Main {
             return;
         }
         int[] visit = new int[100001];
-        for (int i = 0; i < 100001; i++) {
-            visit[i] = Integer.MAX_VALUE;
-        }
         Deque<Integer> deque = new LinkedList<>();
         deque.add(n);
 
-        visit[n] = 0;
+        visit[n] = 1;
         while (!deque.isEmpty()) {
             int x = deque.pollFirst();
             if (x == k) break;
 
-            if (2 * x < 100001 && visit[2 * x] > visit[x]) {
+            if (2 * x < 100001 && visit[2 * x] == 0) {
                 visit[2 * x] = visit[x];
                 deque.add(2 * x);
             }
-            if (x < 100000 && visit[x + 1] > visit[x] + 1) {
+            if (0 < x  && visit[x - 1] == 0) {
+                visit[x - 1]  = visit[x] + 1;
+                deque.add(x - 1);
+            }
+            if (x < 100000 && visit[x + 1] == 0) {
                 visit[x + 1] = visit[x] + 1;
                 deque.add(x + 1);
             }
-            if (0 < x && visit[x - 1] > visit[x] + 1) {
-                visit[x - 1] = visit[x] + 1;
-                deque.add(x - 1);
-            }
         }
-        System.out.println(visit[k]);
+        System.out.println(visit[k] - 1);
     }
 }
