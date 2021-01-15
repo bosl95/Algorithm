@@ -23,7 +23,7 @@ public class Main {
         light = new boolean[n][n];
 
         list = new ArrayList[n * n];
-        for (int i=0; i<n*n; i++) {
+        for (int i = 0; i < n * n; i++) {
             list[i] = new ArrayList<>();
         }
 
