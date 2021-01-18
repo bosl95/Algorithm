@@ -15,17 +15,18 @@ public class Main {
         a = Integer.parseInt(st.nextToken());
         b = Integer.parseInt(st.nextToken());
         c = Integer.parseInt(st.nextToken());
+        a %= c;
 
         System.out.println(multiple(b));
     }
 
     private static long multiple(long num) {
-        if (num == 1) return (a % c);
+        if (num == 1) return a;
 
         if (num % 2 == 0) {
             long x = multiple(num / 2) % c;
             return (x * x) % c;
         }
-        return ((a % c) * multiple(num - 1) % c) % c;
+        return (a * multiple(num - 1) % c) % c;
     }
 }
