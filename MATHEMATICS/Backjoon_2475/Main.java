@@ -1,4 +1,4 @@
-package MATHEMATICS_1.Backjoon_2475;
+package MATHEMATICS.Backjoon_2475;
 
 import java.io.BufferedReader;
 import java.io.IOException;
