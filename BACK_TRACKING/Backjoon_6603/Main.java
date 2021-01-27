@@ -6,8 +6,8 @@ import java.util.StringTokenizer;
 public class Main {
     static BufferedWriter bw;
     static boolean[] visit;
-    static int k, LOTTE_NUM = 6;
-    static int[] S, result = new int[LOTTE_NUM];
+    static int k, LOTTO_NUM = 6;
+    static int[] S, result = new int[LOTTO_NUM];
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,15 +24,15 @@ public class Main {
             for (int i = 0; i < k; i++) {
                 S[i] = Integer.parseInt(st.nextToken());
             }
-            lotte(0);
+            lotto(0);
             bw.write("\n");
         }
         bw.flush();
         bw.close();
     }
 
-    private static void lotte(int num) throws IOException {
-        if (num == LOTTE_NUM) {
+    private static void lotto(int num) throws IOException {
+        if (num == LOTTO_NUM) {
             for (int idx : result) {
                 bw.write(String.valueOf(S[idx]));
                 bw.write(" ");
@@ -46,7 +46,7 @@ public class Main {
             if (visit[i]) continue;
             visit[i] = true;
             result[num] = i;
-            lotte(num + 1);
+            lotto(num + 1);
             visit[i] = false;
         }
     }
