@@ -6,8 +6,9 @@ import java.util.*;
 public class Main {
     static BufferedWriter bw;
     static int n, m;
-    static HashSet<Integer> arr;
-    static Map<Integer, Boolean> visit;
+    static int[] arr;
+    static boolean[] visit;
+    static LinkedHashSet<String> set = new LinkedHashSet<>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,26 +18,38 @@ public class Main {
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
 
-        arr = new HashSet<>();
-        visit = new HashMap<>();
+        arr = new int[n];
+        visit = new boolean[n];
+
         st = new StringTokenizer(br.readLine());
         for (int i=0; i<n; i++) {
-            int tmp = Integer.parseInt(st.nextToken());
-            if (arr.contains(tmp)) continue;
-            arr.add(tmp);
-            visit.put(tmp, false);
+            arr[i] = Integer.parseInt(st.nextToken());
         }
 
+        Arrays.sort(arr);
+
         backtracking(0, "");
+
+        for (String s : set) {
+            bw.write(s);
+            bw.write("\n");
+        }
+
         bw.flush();
         bw.close();
     }
 
-    private static void backtracking(int num, String result) throws IOException {
+    private static void backtracking(int num, String result) {
         if (num == m) {
-            bw.write(result);
-            bw.write("\n");
+            set.add(result);
             return;
+        }
+
+        for (int i=0; i<n; i++) {
+            if (visit[i]) continue;
+            visit[i] = true;
+            backtracking(num+1, result + arr[i] + " ");
+            visit[i] = false;
         }
     }
 }
