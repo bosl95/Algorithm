@@ -13,9 +13,9 @@
 
 ## :heavy_check_mark: Contents  
 ### :dart: Algorithm  
-- [*Back Tracking*](https://github.com/bosl95/Algorithm/tree/master/BACK%20TRACKING)  
-- [*Brute Force*](https://github.com/bosl95/Algorithm/tree/master/BRUTE%20FORCE)  
-- [*BINARY_SEARCH*](https://github.com/bosl95/Algorithm/tree/master/BINARY%20SEARCH)
+- [*Back Tracking*](https://github.com/bosl95/Algorithm/tree/master/BACK_TRACKING)  
+- [*Brute Force*](https://github.com/bosl95/Algorithm/tree/master/BRUTE_FORCE)  
+- [*BINARY_SEARCH*](https://github.com/bosl95/Algorithm/tree/master/BINARY_SEARCH)
 - [*DFS/BFS*](https://github.com/bosl95/Algorithm/tree/master/DFS_BFS)  
 - [*Divide and Conquer*](https://github.com/bosl95/Algorithm/tree/master/DIVIDE%20AND%20CONQUER)  
 - [*Dynamic Programming*](https://github.com/bosl95/Algorithm/tree/master/DYNAMIC%20PROGRAMMING)  
@@ -40,7 +40,7 @@
   
   
 ### :dart: Etc.  
-- [*Samsung Software Expert Academy*](https://github.com/bosl95/Algorithm/tree/master/SW%20Expert%20Academy)
+- [*Samsung Software Expert Academy*](https://github.com/bosl95/Algorithm/tree/master/SW_Expert_Academy)
 - [*Programmers*](https://github.com/bosl95/Algorithm/tree/master/Programmers)
 
 <br>
