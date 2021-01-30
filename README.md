@@ -11,8 +11,10 @@
 
 <br> 
 
-## :heavy_check_mark: Contents  
-### :dart: Algorithm  
+## :heavy_check_mark: Contents
+
+### :dart: Algorithm<br>
+
 - [*Back Tracking*](https://github.com/bosl95/Algorithm/tree/master/BACK_TRACKING)  
 - [*Brute Force*](https://github.com/bosl95/Algorithm/tree/master/BRUTE_FORCE)  
 - [*BINARY_SEARCH*](https://github.com/bosl95/Algorithm/tree/master/BINARY_SEARCH)
