@@ -2,7 +2,7 @@
 
 ## Dynamic Programming을 이용한 풀이
 
-<image src='https://lh3.googleusercontent.com/QeWMCuZUhNikgVsZb2rIWIZGqgAKJQsbF_43cyIfj-AIkiqhD6aY-MpB17lr7v8nvQVn8n4GQkUoYJOVM69pn6szuL6za-edKbmD-OAmDGKFKe9EPJONoljClgu3RhvYwgEhIeMe' width='70%'>
+![image](./img.png)
 
 - 동전들을 하나씩 꺼내면서 검사해준다.
 - DP의 크기는 K만큼 설정해주고, `DP[x] = DP[k-coin] + ... DP[coin-coin](=DP[0])` 를 이용하여 풀어준다.
