@@ -6,5 +6,5 @@
 
 기초적인 DP 문제.
 문제는 어렵지 않았으나 **sys 모듈 사용 여부에 따라 시간이 많이 단축**되는 것을 확인했다.
-
+œ
 ![image](https://user-images.githubusercontent.com/34594339/89745044-15236680-daec-11ea-9f81-9dda76ff731e.png)
