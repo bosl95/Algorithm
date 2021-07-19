@@ -1,4 +1,4 @@
-# :tada: Algorithm:tada:
+# :tada::tada: Algorithm:tada::tada:
 
 <br> 
 
@@ -138,5 +138,3 @@
 - 같은 결과를 가지는 코드는 아래와 같다.
 
       sorted(result.items(), key=lambda x:result[x[0]], reverse=True)
-
-
