@@ -1,4 +1,4 @@
-package Programmers.kakao_2018;
+package Programmers.kakao_2018_뉴스_클러스터링;
 
 import java.util.ArrayList;
 import java.util.List;
