@@ -97,4 +97,4 @@ for x, y in points:
     answer[maxy - y][x - minx] = '*'
 ```
     
-![image](./img.jpeg)
+![image](img.jpeg)
