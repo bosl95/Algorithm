@@ -1,0 +1,10 @@
+
+g
+java:S3008
+"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ
+g
+java:S3008"LRename this field "E" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖêÃÀÿÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+t
+java:S1210P"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(»†úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹¥è÷
