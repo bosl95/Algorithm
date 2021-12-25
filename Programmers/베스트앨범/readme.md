@@ -1,6 +1,6 @@
 # [베스트 앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
 
-## 풀이
+## 다른 사람의 풀이
 
 ```java
 class Solution {
@@ -49,7 +49,9 @@ class Solution {
 }
 ```
 
-- 런타임 에러가 계속 발생해 다른 사람의 풀이를 봤다.
+- 런타임 에러가 계속 발생해 다른 사람의 풀이를 봤다
+  
+## 나의 풀이
 
 ```java
 class Solution {
